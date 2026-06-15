@@ -36,8 +36,8 @@ resource "aws_vpc_security_group_egress_rule" "alb_outbound_1"{
   security_group_id = aws_security_group.alb.id
   referenced_security_group_id = aws_security_group.ecs.id
   ip_protocol = var.tcp
-  from_port = "3000"
-  to_port = "3000"
+  from_port = "8080"
+  to_port = "8080"
 }
 
 #creating sg for ecs 
@@ -61,8 +61,8 @@ resource "aws_vpc_security_group_ingress_rule" "inbound_ecs" {
   security_group_id = aws_security_group.ecs.id
   referenced_security_group_id = aws_security_group.alb.id
   ip_protocol = var.tcp
-  from_port = "3000"
-  to_port = "3000"
+  from_port = "8080"
+  to_port = "8080"
 }
 
 
