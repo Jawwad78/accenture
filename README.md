@@ -31,13 +31,13 @@ I reduced the image size by 88% which  means deployments are faster as there is 
 
 ## Infrastructure Architecture
 
-<img width="1920" height="1348" alt="Image" src="https://github.com/user-attachments/assets/25723091-189c-4733-b1fe-e55176f46443" />
+<img width="1920" height="1401" alt="Image" src="https://github.com/user-attachments/assets/b8925b2e-f2cd-4740-803d-0268cbbfbb44" />
 
 * **ECS Fargate** for serverless container execution
 * **Application Load Balancer (ALB)** deployed in public subnets
 * **ECS tasks** deployed in private subnets
 * **2 Availability Zones** used for high availability
-* **Cloudflare** used to manage domain: (https://tm.nginxjawwad.org) and route traffic to ALB
+* **Route53** used to manage domain: (https://accenture.jawwad.org) and route traffic to ALB
 * **HTTPS** enabled using ACM certificates with ALB
 
 ---
