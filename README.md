@@ -31,7 +31,7 @@ I reduced the image size by 88% which  means deployments are faster as there is 
 
 ## Infrastructure Architecture
 
-<img width="1920" height="1401" alt="Image" src="https://github.com/user-attachments/assets/b8925b2e-f2cd-4740-803d-0268cbbfbb44" />
+<img width="1920" height="1401" alt="Image" src="https://github.com/user-attachments/assets/98a1932f-e9a2-49a7-b840-f25ed44b97f9" />
 
 * **ECS Fargate** for serverless container execution
 * **Application Load Balancer (ALB)** deployed in public subnets
